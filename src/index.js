@@ -9,7 +9,10 @@ function create(name) {
   cohortList.push(cohort)
   return cohort
 }
-
+function resetCohort() {
+  cohortList.splice(0, cohortList.length)
+}
 module.exports = {
-  create
+  create,
+  resetCohort
 }
